@@ -1,0 +1,119 @@
+{% extends 'base.html' %}
+{% block pagetitle %}
+Plant Disease Detection
+{% endblock pagetitle %}
+{% block body %}
+<style>
+  body{
+    overflow-x: hidden;
+    
+
+
+    background: linear-gradient(322deg, #095d48, #62a594, #5665b9);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 0s ease infinite;
+    -moz-animation: AnimationName 0s ease infinite;
+    animation: AnimationName 0s ease infinite;
+
+    @-webkit-keyframes AnimationName {
+      0%{background-position:25% 0%}
+      50%{background-position:76% 100%}
+      100%{background-position:25% 0%}
+  }
+  @-moz-keyframes AnimationName {
+      0%{background-position:25% 0%}
+      50%{background-position:76% 100%}
+      100%{background-position:25% 0%}
+  }
+  @keyframes AnimationName { 
+      0%{background-position:25% 0%}
+      50%{background-position:76% 100%}
+      100%{background-position:25% 0%}
+  }
+
+
+  }
+  @media only screen and (max-width: 830px) {
+    .laptop{
+      display: none;
+    }
+  }
+  @media (min-width:830px) and (max-width: 1536px){
+    .mobile{
+      display: none;
+    }
+    
+}
+
+</style>
+<div class='mobile p-5'>
+  <div class="row mb-5 text-center text-white">
+    <div class="col-lg-10 mx-auto">
+      <h1 class="display-4" style="padding-top: 2%;font-weight: 400;color:red;"><b>Note✍🏻</b></h1>
+      <p class="lead" style="font-weight: 500;color: black;">Please🙏 Open This Site On Laptop/PC 💻 Screen Only</p>
+      <p class="lead" style="font-weight: 500;color: black;">Thank You 🤝</p>    
+    </div>
+</div>
+</div>
+
+<div class="row mb-5 text-center text-white laptop">
+    <div class="col-lg-10 mx-auto">
+        <h1 class="display-4" style="padding-top: 2%;font-weight: 400;color: rgb(4, 54, 4);"><b>Agrow
+                 </b></h1>
+        <p class="lead" style="font-weight: 500;color: black;">This AI Engine Will Help To Detect Disease From Following Fruites And Veggies</p>
+    </div>
+</div>
+
+<center class="laptop">
+    <a href="/index">
+    <button class = "bttn-pill bttn-lg btn-success"><b style="color: black;">AI Engine</b></button>
+</a>
+</center>
+
+
+<center class="laptop">
+
+<section>
+  <div class="container mg-25">
+    <div class="row row-cols-1 row-cols-md-3 g-4 py-10 "> 
+      <a class="nav-link" href="/crop">
+        <div class="col">
+          <div class="card h-100">
+            <img src="../images/cabagge.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Crop</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.  </p>
+            </div>
+          </div>
+        </div>
+    </a>
+    <a class="nav-link" href="/fertilizer">
+        <div class="col">
+          <div class="card h-100">
+            <img src="../images/Compost-vs-fertilizer-1.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Fertilizer</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.          </p>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a class="nav-link" href="/cropping_techniques">
+            <div class="col">
+              <div class="card h-100">
+                <img src="../images/SRI-hybrid-rice-field.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Cropping Techniques</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural .</p>
+                </div>
+              </div>
+            </div>
+          </a>
+     
+      </div>     
+    </div>
+  </section>
+</center>
+
+{% endblock body %}
